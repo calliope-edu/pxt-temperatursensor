@@ -60,7 +60,7 @@ class microbitp : public MicroBitComponent
     }
 
     int getDigitalValue(){
-        ((DigitalIn *)pin)->mode(PullUp);
+        ((DigitalIn *)pin)->mode(PullNone);
         status = 0x01;
         return ((DigitalIn *)pin)->read();
 //          return 0;
@@ -119,9 +119,7 @@ class microbitp : public MicroBitComponent
     int readBit() {
         volatile int i;
         pin.setDigitalValue(0);
-        //pin.setDigitalValue(1);
-        pin.getDigitalValue();
-        for (i = 1; i < 10; i++);
+        pin.setDigitalValue(1);
         int b = pin.getDigitalValue();
         for (i = 1; i < 60; i++);
         return b;
