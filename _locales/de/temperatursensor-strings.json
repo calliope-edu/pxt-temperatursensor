@@ -1,0 +1,5 @@
+{
+  "temperatursensor.TemperatureString|block": "Temperatur als Text von Pin |%p|",
+  "temperatursensor.TemperatureNumber|block": "Temperatur als Zahl von Pin |%p|",
+  "temperatursensor.WriteTemperature|block": "Schreibe Temperatur von Pin |%p|"
+}

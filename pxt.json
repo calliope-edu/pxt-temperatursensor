@@ -1,0 +1,20 @@
+{
+    "name": "temperatursensor",
+    "version": "0.0.3",
+    "description": "ds18b20 Temperatursensor",
+    "license": "MIT",
+     "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/de/temperatursensor-strings.json",
+        "temperatursensor.cpp"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
