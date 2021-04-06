@@ -76,25 +76,6 @@ namespace temperatursensor {
     //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
     export function TemperatureString(p:pin): string {
      let temp = Temperature(p);
-     let x = (temp / 100)
-     let y = (temp % 100)
-     let z = ''
-      if (temp >= 0) {
-        if (y < 10) {
-            z = x.toString() + ',0' + y.toString()
-        }
-        else {
-            z = x.toString() + ',' + y.toString()
-        }
-    }
-    else if (temp < 0) {
-        if (y > -10) {
-            z = '-' + (-x).toString() + ',0' + (-y).toString()
-        }
-        else {
-            z = '-' + (-x).toString() + ',' + (-y).toString()
-        }
-    }
-    return z
+    return (temp / 100).toString()
    }
 }
