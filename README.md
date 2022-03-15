@@ -30,7 +30,7 @@ basic.forever(() => {
 
 ## License
 
-GUI
+MIT
 
 Forked from https://github.com/mengbishu/pxt-ds18b20
 
